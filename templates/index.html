@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>위잉</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="center-container">
+        <h1>
+            <img src="/static/images/bee.png" alt="꿀벌" class="bee-icon">
+            위잉
+        </h1>
+        <p class="welcome-message">안녕하세요, {{ username }}님!</p>
+        <div style="text-align: center;">
+            <button id="start-btn">녹음 시작</button>
+            <button id="stop-btn" disabled>녹음 종료</button>
+        </div>
+        <div id="loading" style="display: none;">
+            <img src="/static/images/loading.gif" alt="로딩 중" width="50">
+            <p>녹음 중...</p>
+        </div>
+        <p class="box-large" id="result">'녹음 시작' 버튼을 누르고 말해주세요</p>
+        <p class="box-small">
+            2024-2 세종대학교 지능기전공학부 캡스톤디자인</br>
+            주제: 음성 기반 안심 귀가 공유 드론 서비스</br>
+            박무열, 최보경, 박시은, 정우주
+        </p>
+        <div style="text-align: center; margin-top: 20px;">
+            <a href="/logout" class="logout-btn">사용종료</a>
+        </div>
+    </div>
+    <script src="/static/script.js"></script>
+</body>
+</html>

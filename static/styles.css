@@ -1,0 +1,331 @@
+/* 외부 폰트 가져오기 */
+@import url('https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css');
+@font-face {
+    font-family: 'MaplestoryOTFBold';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/MaplestoryOTFBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* ============================================= */
+/* 전체 배경 */
+body {
+    background-color: #FFFACD; /* 연한 노란색 배경 */
+    font-family: Arial, sans-serif; /* 기본 폰트 설정 */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* 수평 중앙 정렬 */
+    align-items: center; /* 수직 중앙 정렬 */
+    height: 100vh; /* 화면 전체 높이 사용 */
+    color: #333; /* 텍스트 기본 색상 */
+}
+
+/* 중앙 컨테이너 */
+.center-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 90%;
+    max-width: 800px;
+}
+
+/* 꿀벌 아이콘 스타일 */
+.bee-icon {
+    width: 60px; /* 아이콘 크기 */
+    height: auto; /* 비율 유지 */
+    margin-right: 10px;
+    vertical-align: middle; /* 텍스트와 이미지 높이 맞춤 */
+}
+
+/* 페이지 제목 스타일 */
+h1 {
+    text-align: center;
+    font-family: 'MaplestoryOTFBold';
+    font-size: 36px;
+    color: #444;
+    display: flex;
+    align-items: center;
+    gap: 10px; /* 꿀벌 아이콘과 텍스트 간격 */
+}
+
+/* 환영 메시지 */
+.welcome-message {
+    font-size: 18px;
+    background-color: #FFFAF0;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+/* 버튼 스타일 */
+button {
+    font-size: 16px;
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    background-color: #FFD700; /* 기본 버튼 색상 */
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'NanumSquare', sans-serif;
+}
+
+button:disabled {
+    background-color: #CCC; /* 비활성화된 버튼 색상 */
+    cursor: not-allowed;
+}
+
+/* 로딩 애니메이션 스타일 */
+#loading {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #666;
+}
+
+/* 박스 스타일 */
+.box-large, .box-small {
+    background-color: #FFFAF0;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 10px auto;
+    max-width: 600px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: #444;
+}
+
+.box-large {
+    font-size: 18px;
+}
+
+.box-small {
+    font-size: 14px;
+}
+
+/* 로그아웃 버튼 */
+.logout-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #d9534f;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.logout-btn:hover {
+    background-color: #c9302c;
+}
+
+/* ============================================ */
+
+/* 제목 스타일 */
+.login-container h1 {
+    margin-bottom: 20px;
+    color: #444;
+    font-size: 24px;
+    font-family: 'MaplestoryOTFBold';
+    text-align: center; /* 텍스트 중앙 정렬 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.google-icon {
+    width: 35px; /* 아이콘 크기 */
+    height: auto; /* 비율 유지 */
+    margin-left: 5px; /* 제목과 이미지 사이 여백 */
+    vertical-align: middle; /* 텍스트와 이미지 높이 맞춤 */
+}
+
+.naver-icon {
+    width: 35px; /* 아이콘 크기 */
+    height: auto; /* 비율 유지 */
+    margin-left: 5px; /* 제목과 이미지 사이 여백 */
+    vertical-align: middle; /* 텍스트와 이미지 높이 맞춤 */
+}
+
+.apple-icon {
+    width: 25px; /* 아이콘 크기 */
+    height: auto; /* 비율 유지 */
+    margin-left: 5px; /* 제목과 이미지 사이 여백 */
+    vertical-align: middle; /* 텍스트와 이미지 높이 맞춤 */
+}
+
+h2 {
+    text-align: center;
+    color: #444;
+    margin-top: 20px;
+    font-family: 'NanumSquare', sans-serif;
+}
+
+h3 {
+    text-align: center;
+    color: #444;
+    margin-top: 20px;
+    font-family: 'NanumSquare', sans-serif;
+}
+
+/* 기본 박스 스타일 */
+p {
+    text-align: center;
+    margin: 20px auto;
+    padding: 15px;
+    width: 80%;
+    max-width: 600px;
+    background-color: #FFFAF0;
+    border: 1px solid #DDD;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: #444;
+    font-family: 'NanumSquare', sans-serif;
+}
+
+/* 기본 버튼 스타일 */
+button {
+    padding: 10px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* 로그인 컨테이너 */
+.login-container {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    font-family: 'NanumSquare', sans-serif;
+}
+
+/* 제목 스타일 */
+.login-container h1 {
+    margin-bottom: 20px;
+    color: #444;
+    font-size: 24px;
+}
+
+/* 드론 아이디 스타일 */
+.login-container p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #363636;
+}
+
+/* 폼 스타일 */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* 입력 상자 간격 */
+}
+
+/* 라벨과 입력 박스를 한 줄로 정렬 */
+.form-group {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* 라벨 스타일 */
+label {
+    font-size: 14px;
+    color: #444;
+    margin-right: 10px;
+    width: 80px; /* 라벨 고정 너비 */
+    text-align: right; /* 오른쪽 정렬 */
+}
+
+/* 입력 상자 스타일 */
+input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* 로그인 버튼 스타일 */
+.login-btn {
+    padding: 10px;
+    background-color: #FFD700;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.login-btn:hover {
+    background-color: #FFC107;
+}
+
+/* 오류 메시지 스타일 */
+.error {
+    color: #ffffff !important;  /* 텍스트 색상을 흰색으로 설정 */
+    background-color: #d9534f; /* 빨간색 배경 */
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 14px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+/* 구분선 텍스트 스타일 */
+.or-continue {
+    margin: 20px 0;
+    font-size: 14px;
+    color: #888;
+    position: relative;
+}
+
+/* 소셜 로그인 버튼 컨테이너 */
+.social-login {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+/* 소셜 버튼 스타일 */
+.social-btn {
+    flex: 1;
+    display: flex;
+    align-items: center; /* 수직 정렬 */
+    justify-content: center; /* 수평 정렬 */
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+    background-color: #e0e0e0;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+    gap: 8px; /* 아이콘과 텍스트 간격 */
+}
+
+/* 개별 소셜 버튼 색상 */
+.google-btn {
+    background-color: #c3c3c3;
+}
+
+.naver-btn {
+    background-color: #c3c3c3;
+}
+
+.apple-btn {
+    background-color: #c3c3c3;
+}
+
+/* 소셜 버튼 hover 효과 */
+.social-btn:hover {
+    opacity: 0.4;
+}
